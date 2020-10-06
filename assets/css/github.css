@@ -27,3 +27,6 @@ h2{
     background: rgb(202,2,219);
     background: radial-gradient(circle, rgba(202,2,219,1) 0%, rgba(130,167,163,1) 60%);
 }
+.liens{
+    color: royalblue;
+}
