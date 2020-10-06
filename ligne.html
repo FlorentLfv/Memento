@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Les lignes de commande</title>
+        <link rel="stylesheet" href="assets/css/ligne.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1><div class="bord">Ligne de commande</div></h1>
+        <h2><div class="bord2">Gestion de documents</div></h2>
+        <p><b style="color: orangered;">! POUR UBUNTU SUR WINDOWS !</b> pour accéder au dossier utilisateur il faut faire <b
+            style="color: cyan">cd/mnt/c</b>.</p>
+        <p>Pour ouvrir le manuel de la commande <b style="color: cyan">ls</b> j'utilise <b style="color: cyan">man
+            ls</b>.<br>La commande <strong style="color: cyan"> ls</strong> permet d'afficher le contenu du dossier dans
+          lequel on se trouve. Cette commmande comporte des variantes comme :<br><b style="color: cyan">-a</b> : permet
+          d'afficher le contenu du dossier courant avec les fichiers cachés;<br><b style="color: cyan">-l</b> : affiche le
+          contenu du dossier courant en détails (propriétaire, heure de modification...)<br>On peut combiner les commandes
+          pour avoir leurs effets sur la même ligne : <b style="color: cyan">-al</b> permet d'afficher le contenu du dossier
+          courant en détails AVEC les fichiers cachés. </p>
+        <p>Pour afficher le chemin du dossier courant, il faut utiliser la commande <b style="color: cyan">pwd</b>.</p>
+        <p>Pour se déplacer d'un dossier à un autre dans le terminal, on utilise la commande <b style="color: cyan">cd</b>.
+        </p>
+        <p>Pour créer un fichier, on utilise la comande <b style="color: cyan">touch.</b></p>
+        <p>Pour créer un dossier je dois utiliser cette commande : <b style="color: cyan">mkdir</b>.</p>
+        <h2><div class="bord2">Le mode "Super administrateur"</div></h2>
+        <p>Afin d'utiliser le mode super administrateur du terminal, il faut utiliser la commande <b style="color:cyan;">sudo
+            -i</b>. &Agrave; noter qu'on peut utiliser une variante pour ne pas refaire tout le chemin jusu'au dossier sur
+          lequel on veut travailler qui est <b style="color: cyan">sudo-s</b>.</p>
+        <h2><div class="bord2">Les paquets</div></h2>
+        <p><b style="color: orangered;">! PRINCIPALEMENT LINUX !</b> Pour mettre à jour les paquets, il faut :</p>
+        <ol>
+          <li>Utiliser la commande <b style="color: cyan">sudo apt update</b>. La commande sudo n'est pas obligatoire si l'on
+            est en super administrateur ;</li>
+          <li>Utiliser la commande <b style="color: cyan">apt-get upgrade</b> pour obtenir les paquets à mettre à jour ;</li>
+          <li>Utiliser la commande <b style="color: cyan">apt search "XML"</b> pour trouver les paquets qui nous intéressent ;
+          </li>
+          <li>Utiliser la commande <b style="color: cyan">apt install git</b> Pour installer les paquets .</li>
+        </ol>
+    </body>
+</html>

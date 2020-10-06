@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Github</title>
+    </head>
+    <body>
+        <h1><div class="bord">Github</div></h1>
+        <h2><div class="bord2">Vidéo initiative à Github</div></h2>
+        <a href="https://www.youtube.com/watch?v=hPfgekYUKgk&ab_channel=LaCapsule" title="Vidéo initiation Github"
+        style="color: rgb(195, 0, 255);">Le lien de la vidéo</a>
+        <h2><div class="bord2">Envoyer un fichier (Push)</div></h2>
+        <ol>
+        <li>Faire un <b style="color: cyan">git init</b> dans le dossier contenant les fichiers qu'on veut envoyer ;</li>
+        <li>Faire un <b style="color: cyan">git add</b> <b style="color: orange;">"Nom du fichier"</b> pour ajouter les
+            fichiers au commit ;</li>
+        <li>Faire un <b style="color: cyan">git commit -m</b> <b style="color: orange;">"Nom du commit"</b> pour faire un
+            commit ;</li>
+        <li>Faire un <b style="color: cyan">git remote add origin</b> <b style="color: orange;">"le lien du repository"</b>
+            pour lier le dossier courant au repository ;</li>
+        <li>Faire un <b style="color: cyan">git push origin</b> <b style="color: orange;">"Nom de la branche"</b> pour
+            envoyer les fichiers sur Github.</li>
+        </ol>
+        <h2><div class="bord2">Recevoir un fichier (Pull)</div></h2>
+        <p>Pour recevoir un fichier du repository, il faut d'abord faire un git init dans le dossier qui recevra les fichiers,
+        puis donner l'adresse du repository et faire un <b style="color: cyan">git pull origin master</b>.</p>
+        <h2><div class="bord2">Commandes supplémentaires</div></h2>
+        <p>Il existe des commandes que l'on peut faire entre les étapes d'un push ou d'un pull :</p>
+        <ul>
+        <li><b style="color: cyan">git status</b> permet de vérifier sur quelle branche su repository on se trouve, s'il y a
+            de nouveaux fchiers à ajouter ou de savoir si un commit a été fait ;</li>
+        <li><b style="color: cyan">git checkout</b> <b style="color: orange;">"Nom de la branche"</b> permet de changer de
+            branche du repository ;</li>
+        <li><b style="color: cyan">git remote -v</b> permet de vérifier qu'on a la bonne adresse du repository ;</li>
+        <li><b style="color: cyan">git merge</b> <b style="color: orange;">"Nom de la branche"</b> permet de merger
+            (fusionner) des branches du repository ;</li>
+        <li><b style="color: cyan">git branch -d</b> <b style="color: orange;">"Nom de la branche"</b> permet de supprimer
+            une branche du repository.</li>
+    </ul>
+    </body>
+</html>  
