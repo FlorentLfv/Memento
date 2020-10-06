@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento</title>
+  </head>
+  <body>
+    <h1 style="color:red">La ligne de commande</h1>
+    <h2 style="color: rgb(11, 204, 11)">Gestion de documents</h2>
+    <p><b style="color: orangered;">! POUR UBUNTU SUR WINDOWS !</b> pour accéder au dossier utilisateur il faut faire <b
+        style="color: cyan">cd/mnt/c</b>.</p>
+    <p>Pour ouvrir le manuel de la commande <b style="color: cyan">ls</b> j'utilise <b style="color: cyan">man
+        ls</b>.<br>La commande <strong style="color: cyan"> ls</strong> permet d'afficher le contenu du dossier dans
+      lequel on se trouve. Cette commmande comporte des variantes comme :<br><b style="color: cyan">-a</b> : permet
+      d'afficher le contenu du dossier courant avec les fichiers cachés;<br><b style="color: cyan">-l</b> : affiche le
+      contenu du dossier courant en détails (propriétaire, heure de modification...)<br>On peut combiner les commandes
+      pour avoir leurs effets sur la même ligne : <b style="color: cyan">-al</b> permet d'afficher le contenu du dossier
+      courant en détails AVEC les fichiers cachés. </p>
+    <p>Pour afficher le chemin du dossier courant, il faut utiliser la commande <b style="color: cyan">pwd</b>.</p>
+    <p>Pour se déplacer d'un dossier à un autre dans le terminal, on utilise la commande <b style="color: cyan">cd</b>.
+    </p>
+    <p>Pour créer un fichier, on utilise la comande <b style="color: cyan">touch.</b></p>
+    <p>Pour créer un dossier je dois utiliser cette commande : <b style="color: cyan">mkdir</b>.</p>
+    <h2 style="color: rgb(11, 204, 11);">Le mode "Super administrateur"</h2>
+    <p>Afin d'utiliser le mode super administrateur du terminal, il faut utiliser la commande <b style="color:cyan;">sudo
+        -i</b>. &Agrave; noter qu'on peut utiliser une variante pour ne pas refaire tout le chemin jusu'au dossier sur
+      lequel on veut travailler qui est <b style="color: cyan">sudo-s</b>.</p>
+    <h2 style="color: rgb(11, 204, 11);">Les paquets</h2>
+    <p><b style="color: orangered;">! PRINCIPALEMENT LINUX !</b> Pour mettre à jour les paquets, il faut :</p>
+    <ol>
+      <li>Utiliser la commande <b style="color: cyan">sudo apt update</b>. La commande sudo n'est pas obligatoire si l'on
+        est en super administrateur ;</li>
+      <li>Utiliser la commande <b style="color: cyan">apt-get upgrade</b> pour obtenir les paquets à mettre à jour ;</li>
+      <li>Utiliser la commande <b style="color: cyan">apt search "XML"</b> pour trouver les paquets qui nous intéressent ;
+      </li>
+      <li>Utiliser la commande <b style="color: cyan">apt install git</b> Pour installer les paquets .</li>
+    </ol>
+    <h1><b style="color: red;">Github</b></h1>
+    <h2 style="color: rgb(11, 204, 11);">Vidéo initiative à Github</h2>
+    <a href="https://www.youtube.com/watch?v=hPfgekYUKgk&ab_channel=LaCapsule" title="Vidéo initiation Github"
+      style="color: rgb(195, 0, 255);">Le lien de la vidéo</a>
+    <h2><b style="color: rgb(11, 204, 11);">Envoyer un fichier (Push)</b></h2>
+    <ol>
+      <li>Faire un <b style="color: cyan">git init</b> dans le dossier contenant les fichiers qu'on veut envoyer ;</li>
+      <li>Faire un <b style="color: cyan">git add</b> <b style="color: orange;">"Nom du fichier"</b> pour ajouter les
+        fichiers au commit ;</li>
+      <li>Faire un <b style="color: cyan">git commit -m</b> <b style="color: orange;">"Nom du commit"</b> pour faire un
+        commit ;</li>
+      <li>Faire un <b style="color: cyan">git remote add origin</b> <b style="color: orange;">"le lien du repository"</b>
+        pour lier le dossier courant au repository ;</li>
+      <li>Faire un <b style="color: cyan">git push origin</b> <b style="color: orange;">"Nom de la branche"</b> pour
+        envoyer les fichiers sur Github.</li>
+    </ol>
+    <h2 style="color: rgb(11, 204, 11);">Recevoir un fichier (Pull)</h2>
+    <p>Pour recevoir un fichier du repository, il faut d'abord faire un git init dans le dossier qui recevra les fichiers,
+      puis donner l'adresse du repository et faire un <b style="color: cyan">git pull origin master</b>.</p>
+    <h2 style="color: rgb(11, 204, 11);">Commandes supplémentaires</h2>
+    <p>Il existe des commandes que l'on peut faire entre les étapes d'un push ou d'un pull :</p>
+    <ul>
+      <li><b style="color: cyan">git status</b> permet de vérifier sur quelle branche su repository on se trouve, s'il y a
+        de nouveaux fchiers à ajouter ou de savoir si un commit a été fait ;</li>
+      <li><b style="color: cyan">git checkout</b> <b style="color: orange;">"Nom de la branche"</b> permet de changer de
+        branche du repository ;</li>
+      <li><b style="color: cyan">git remote -v</b> permet de vérifier qu'on a la bonne adresse du repository ;</li>
+      <li><b style="color: cyan">git merge</b> <b style="color: orange;">"Nom de la branche"</b> permet de merger
+        (fusionner) des branches du repository ;</li>
+      <li><b style="color: cyan">git branch -d</b> <b style="color: orange;">"Nom de la branche"</b> permet de supprimer
+        une branche du repository.</li>
+    </ul>
+    <h1 style="color: red;">HTML/CSS</h1>
+    <h2 style="color: rgb(11, 204, 11);">HTML</h2>
+    <p>Le langage HTML permet de structurer un site. Un document HTML5 doit comprendre cette structure :<br><img
+        src="assets/img/Structure HTML.png"></p>
+    <p>Pour écrire un titre de niveau 1 il faut faire une balise <b style="color: palevioletred;">h1, h2, etc..</b> Il ne
+      peut y avoir de titre h2 s'il n'y a pas de h1.</p>
+    <p>Pour écrire un paragraphe on utilise la balise <b style="color: palevioletred;">p</b>.</p>
+    <p>Pour faire une liste on peut utiliser la balise <b style="color: palevioletred;">ul ou ol</b> :
+    <ul>
+      <li>(unordered list) : utilise des points pour faire une liste</li>
+    </ul>
+    <ol>
+      <li>(ordered list) : utilise des chiffres pour faire une liste</li>
+    </ol>
+    </p>
+    <p>Pour utiliser du CSS dans du HTML, on se sert de l'attribut <b style="color: palevioletred;">style</b>.</p>
+    <h2 style="color: rgb(11, 204, 11);">CSS</h2>
+    <p>Le CSS permet de designer un site. Il permet de donner plusieurs attributs (couleur, police d'écriture..), à une
+      balise sans devoir la retaper.</p>
+  </body>
+</html>

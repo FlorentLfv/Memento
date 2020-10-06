@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(53, 53, 53);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: white;
+}
+ol{
+    color: white;
+}
+ul{
+    color: white;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
